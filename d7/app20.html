@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+  </head>
+  <body>
+    <table border="1" id="data-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Role</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+
+    <script>
+      const jsonData = [
+        { id: 1, name: "Alice Smith", role: "Developer" },
+        { id: 2, name: "Bob Jones", role: "Designer" },
+        { id: 3, name: "Charlie Brown", role: "Manager" },
+      ];
+
+      const tableBody = document.getElementById("table-body");
+
+      jsonData.forEach((user) => {
+        const row = document.createElement("tr");
+
+        row.innerHTML = `
+        <td>${user.id}</td>
+        <td>${user.name}</td>
+        <td>${user.role}</td>
+
+        `;
+
+        tableBody.appendChild(row);
+      });
+    </script>
+  </body>
+</html>
