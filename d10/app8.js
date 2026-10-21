@@ -1,0 +1,1 @@
+console.log([NaN].includes(NaN), [NaN].indexOf(NaN))
