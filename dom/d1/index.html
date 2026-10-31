@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdvantageClub.ai</title>
+  </head>
+  <body>
+    <h1>
+      Q. Write JavaScript code to display a box. When the box is clicked, the
+      console should display 'box is clicked'.
+    </h1>
+
+    <script>
+      const box = document.createElement("div");
+      box.style.width = "100px";
+      box.style.height = "100px";
+      box.style.backgroundColor = "lightblue";
+      box.style.display = "inline-block";
+      box.style.cursor = "pointer";
+      box.addEventListener("click", () => console.log("box is clicked"));
+      document.body.appendChild(box);
+    </script>
+  </body>
+</html>
