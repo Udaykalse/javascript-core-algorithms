@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heading</title>
+  </head>
+  <body>
+    <h1 id="heading">Somthing</h1>
+
+    <div id="container"></div>
+
+    <script>
+      let heading = document.getElementById("heading");
+      let container = document.getElementById('container')
+
+      heading.addEventListener('click',()=>{
+        container.style.width = '20px'
+        container.style.height = '20px'
+        container.style.backgroundColor = 'blue'
+
+
+      })
+
+      heading.addEventListener("click", () => {
+        heading.style.backgroundColor = "blue";
+        heading.style.color = "white";
+      });
+    </script>
+  </body>
+</html>
