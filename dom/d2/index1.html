@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box is clicked</title>
+  </head>
+  <body>
+    <script>
+      const box = document.createElement("div");
+      box.style.width = "100px";
+      box.style.height = "100px";
+      box.style.backgroundColor = "red";
+      box.style.display = "inline-block";
+      box.style.cursor = "pointer";
+      box.addEventListener("click", () => {
+        console.log("Box is Clicked");
+      });
+      document.body.appendChild(box);
+    </script>
+  </body>
+</html>
