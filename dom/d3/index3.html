@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character counter</title>
+  </head>
+  <body>
+    <textarea id="message" maxlength="100"></textarea>
+    <p>Character: <span id="count">0</span></p>
+
+    <script>
+      let message = document.getElementById("message");
+      let count = document.getElementById("count");
+      message.addEventListener("input", () => {
+        count.textContent = message.value.length;
+      });
+    </script>
+  </body>
+</html>
