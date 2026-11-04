@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show and hide an element</title>
+    <style>
+      #box {
+        width: 20px;
+        padding: 30px;
+        background: orange;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">Hide</button>
+    <div id="box">Hello World</div>
+    <script>
+      let btn = document.getElementById("btn");
+      let box = document.getElementById("box");
+      btn.addEventListener("click", () => {
+        if (box.style.display === "none") {
+          box.style.display = "block";
+          btn.textContent = "Hide";
+        } else {
+          box.style.display = "none";
+          btn.textContent = "show";
+        }
+      });
+    </script>
+  </body>
+</html>
