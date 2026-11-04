@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove an HTML element</title>
+  </head>
+  <body>
+    <p id="text">Remove This Paragraphs</p>
+    <button id="btn">Remove</button>
+
+    <script>
+      let text = document.getElementById("text");
+      let btn = document.getElementById("btn");
+      btn.addEventListener("click", () => {
+        // text.textContent = "Hide";
+        text.remove()
+      });
+    </script>
+  </body>
+</html>
