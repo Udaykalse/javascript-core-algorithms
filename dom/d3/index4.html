@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Background Color of All Items in JavaScript</title>
+    <style>
+      .item {
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <script>
+      const items = document.querySelectorAll('.item');
+      items.forEach(function(itM){
+        itM.style.backgroundColor = 'Yellow'
+      })
+    </script>
+  </body>
+</html>
