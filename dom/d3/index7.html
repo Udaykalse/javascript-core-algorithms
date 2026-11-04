@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a new HTML element</title>
+  </head>
+  <body>
+    <button id="btn">Add</button>
+    <ul id="list"></ul>
+    <script>
+      const btn = document.getElementById("btn");
+      const list = document.getElementById("list");
+      btn.addEventListener("click", () => {
+        const li = document.createElement("li");
+        li.textContent = "New Item";
+        list.appendChild(li);
+      });
+    </script>
+  </body>
+</html>
